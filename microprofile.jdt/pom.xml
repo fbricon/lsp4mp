@@ -7,6 +7,12 @@
   <packaging>pom</packaging>
   <name>microprofile.jdt.ls :: parent</name>
   <description>microprofile.jdt.ls parent</description>
+  <scm>
+		<connection>scm:git:git@github.com:eclipse/lsp4mp.git</connection>
+		<developerConnection>scm:git:git@github.com:eclipse/lsp4mp.git</developerConnection>
+		<url>https://github.com/eclipse/lsp4mp</url>
+		<tag>${project.version}</tag>
+	</scm>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -14,12 +20,12 @@
     <tycho.extras.version>${tycho.version}</tycho.extras.version>
     <tycho.scmUrl>scm:git:https://github.com/eclipse/lsp4mp</tycho.scmUrl>
     <tycho.generateSourceReferences>true</tycho.generateSourceReferences>
-    <jdt.ls.version>0.52.1.20200318153300</jdt.ls.version>
+    <jdt.ls.version>0.60.0.20200902084611</jdt.ls.version>
     <tycho.test.platformArgs />
     <tycho.test.jvmArgs>-Xmx512m ${tycho.test.platformArgs}</tycho.test.jvmArgs>
 
     <!-- Code coverage -->
-    <jacoco.version>0.7.9</jacoco.version>
+    <jacoco.version>0.8.5</jacoco.version>
     <coverage.filter>org.eclipse.lsp4mp.jdt.*</coverage.filter>
     <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
     <jacoco.destFile>${project.build.directory}/jacoco.exec</jacoco.destFile>
@@ -29,14 +35,14 @@
 
   <repositories>
     <repository>
-      <id>2019-06</id>
+      <id>2020-06</id>
       <layout>p2</layout>
-      <url>http://download.eclipse.org/releases/2019-06</url>
+      <url>http://download.eclipse.org/releases/2020-06</url>
     </repository>
     <repository>
       <id>jdt.ls.p2</id>
       <layout>p2</layout>
-      <url>http://download.eclipse.org/jdtls/snapshots/repository/latest/</url>
+      <url>https://download.eclipse.org/jdtls/milestones/0.60.0/repository/</url>
     </repository>
     <repository>
       <id>jdt.ls.maven</id>
